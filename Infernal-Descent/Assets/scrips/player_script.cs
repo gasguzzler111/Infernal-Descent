@@ -12,6 +12,7 @@ public class player_script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //movmement 
         float xspeed = Input.GetAxis("Horizontal");
         float yspeed = Input.GetAxis("Vertical"); 
         transform.Translate(Vector2.right * xspeed * speed * Time.deltaTime);
