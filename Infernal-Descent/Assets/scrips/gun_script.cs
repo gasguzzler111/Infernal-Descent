@@ -15,7 +15,7 @@ public class gun_script : MonoBehaviour
     { 
         if (Input.GetMouseButtonDown(0))
         {
-            GameObject bullet = Instantiate(bulletpre, new Vector2(transform.position.x,transform.position.y),Quaternion.identity);
+            GameObject bullet = Instantiate(bulletpre, new Vector2(transform.position.x,transform.position.y),transform.rotation);
         }
     }
 }
