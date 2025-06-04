@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class bullet_script : MonoBehaviour
 {
-    public float speed = 10; 
+    [SerializeField] private float speed = 10; 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,5 +13,9 @@ public class bullet_script : MonoBehaviour
     void Update()
     {
         transform.position += transform.right * speed * Time.deltaTime;
+    }
+    public void bullet_hit()
+    {
+        Destroy(gameObject);    
     }
 }

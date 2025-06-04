@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class rotate_script : MonoBehaviour
 {
-    public Transform crosshair;
+    [SerializeField] private Transform crosshair;
 
     // Update is called once per frame
     void Update()
