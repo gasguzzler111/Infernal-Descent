@@ -6,6 +6,7 @@ public class bullet_script : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        Invoke("bullet_hit", 6f);
         
     }
 

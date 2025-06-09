@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class player_script : MonoBehaviour
 {
-    [SerializeField] private float speed = 2;
+    [SerializeField] private float speed = 5;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

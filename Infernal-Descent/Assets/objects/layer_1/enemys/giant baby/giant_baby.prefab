@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -1646348132983198947}
   - component: {fileID: 19384539918773562}
   - component: {fileID: 5365937268686399240}
+  - component: {fileID: 4462645789810697177}
   m_Layer: 3
   m_Name: giant_baby
   m_TagString: Untagged
@@ -79,13 +80,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 4907117731815655955, guid: f0e0f94cdad2b7d46afd4a62b1c7b430, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.17, y: 0.19}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -170,7 +171,6 @@ MonoBehaviour:
   HP: 100
   player_dis: 0
   hurtbxpre: {fileID: 1354696670998820184, guid: b789104a3aeb601498486eb7d165f7c8, type: 3}
-  is_attk: 0
   attk_time: 6
 --- !u!195 &5365937268686399240
 NavMeshAgent:
@@ -194,3 +194,25 @@ NavMeshAgent:
   m_BaseOffset: 0.44
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &4462645789810697177
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6200150593849049956}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d437b15c40182bf4792fe642606ac3aa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
