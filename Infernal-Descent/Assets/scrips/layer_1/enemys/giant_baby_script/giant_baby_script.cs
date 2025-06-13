@@ -77,6 +77,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
         // distence check
         if (player_dis >= 1.5 && is_stuned == false)
         {
+            attk_time = 6;  
             agent.isStopped = false;
         }
         else if (player_dis < 1.5)
@@ -105,6 +106,14 @@ public class NewMonoBehaviourScript : MonoBehaviour
             Invoke("stun_stop", .5f);
             bullet.bullet_hit();
         }
+        if (other.gameObject.CompareTag("knockback_hit")) //when player is hit they get knocked back
+        {
+            is_stuned = true;
+            agent.isStopped = true;
+            rb.AddForce(dir * -5, ForceMode2D.Impulse);
+            Invoke("Knockback_stop", .3f);// stops the knock back after some time 
+            Invoke("stun_stop", .5f);
+        }
     }
     private void Knockback_stop()
     {
@@ -123,17 +132,19 @@ public class NewMonoBehaviourScript : MonoBehaviour
         {
             case 0:
                 GameObject hurtbxu = Instantiate(hurtbxpre, new Vector2(transform.position.x, transform.position.y+1), Quaternion.identity);
+                Destroy(hurtbxu,.1f);
                 break;
             case 1:
                 GameObject hurtbxl = Instantiate(hurtbxpre, new Vector2(transform.position.x-1, transform.position.y), Quaternion.identity);
-
+                Destroy(hurtbxl, .1f);
                 break;
             case 2:
                 GameObject hurtbxr = Instantiate(hurtbxpre, new Vector2(transform.position.x + 1, transform.position.y), Quaternion.identity);
-
+                Destroy(hurtbxr, .1f);
                 break;
             case 3:
                 GameObject hurtbxd = Instantiate(hurtbxpre, new Vector2(transform.position.x, transform.position.y-1), Quaternion.identity);
+                Destroy(hurtbxd, .1f);
                 break;
         }
         attk_time = 6;

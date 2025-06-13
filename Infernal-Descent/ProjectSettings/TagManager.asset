@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - bullet
+  - knockback_hit
   layers:
   - Default
   - TransparentFX
