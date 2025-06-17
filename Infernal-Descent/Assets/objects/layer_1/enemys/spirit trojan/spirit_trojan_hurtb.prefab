@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3621565543937997744}
   - component: {fileID: 4379102508203733064}
   m_Layer: 0
-  m_Name: giant_hurtb
+  m_Name: spirit_trojan_hurtb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
